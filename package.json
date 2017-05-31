@@ -1,0 +1,22 @@
+{
+  "name": "chrome-extensions-skeleton",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abstiles/chrome-extensions-skeleton.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abstiles/chrome-extensions-skeleton/issues"
+  },
+  "homepage": "https://github.com/abstiles/chrome-extensions-skeleton#readme",
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
