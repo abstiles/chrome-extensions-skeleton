@@ -18,7 +18,6 @@ ChromeManifestPlugin.prototype.apply = function(compiler) {
     test: /manifest\.json$/,
     loader: path.resolve("./manifest-loader.js"),
   });
-  console.log(compiler.options);
 };
 
 module.exports = ChromeManifestPlugin;

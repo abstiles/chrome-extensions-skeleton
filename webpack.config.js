@@ -1,10 +1,11 @@
+const path = require('path');
 const ChromeManifestPlugin = require('./chrome-manifest-plugin');
 
 module.exports = {
   entry: "./src/main.ts",
   output: {
-    path: __dirname + 'dist',
-    filename: "main.js",
+    path: path.join(__dirname, "dist"),
+    filename: "[name].[ext]",
   },
 
   plugins: [ new ChromeManifestPlugin() ],
