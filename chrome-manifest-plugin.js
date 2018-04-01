@@ -1,3 +1,5 @@
+const path = require('path');
+
 function ChromeManifestPlugin(options) {
   const defaults = {
     manifest: './manifest.json',
@@ -14,9 +16,7 @@ ChromeManifestPlugin.prototype.apply = function(compiler) {
   compiler.options.output.filename = '[name].js';
   compiler.options.module.rules.push({
     test: /manifest\.json$/,
-    use: [
-      "manifest-loader",
-    ]
+    loader: path.resolve("./manifest-loader.js"),
   });
   console.log(compiler.options);
 };
