@@ -15,7 +15,6 @@ ChromeManifestPlugin.prototype.apply = function(compiler) {
   compiler.options.module.rules.push({
     test: /manifest\.json$/,
     use: [
-      "json-loader",
       "manifest-loader",
     ]
   });
